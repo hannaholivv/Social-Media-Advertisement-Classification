@@ -1,0 +1,14 @@
+# Load necessary packages
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(caret)
+library(rpart)
+# Read data from URL
+data <- read_csv("suv_data.csv")
+# Print the first few rows of data
+head(data)
+# Print summary statistics
+summary(data)
+# Check for missing values
+colSums(is.na(data))
